@@ -1,0 +1,159 @@
+body .likebutton {
+    text-align: center;
+}
+
+body .likebutton a {
+    color: gray;
+    text-decoration: none !important;
+    font-size: 1.25em;
+}
+
+body .likebutton a .glyphicon {
+    transition: all 0.5s;
+}
+
+body .likebutton a .glyphicon.glyphicon-heart {
+    color: #e74c3c;
+}
+
+body .likebutton a .glyphicon.glyphicon-heart-empty:hover {
+    transform: scale(1.1);
+}
+
+body {
+    background-color: #2e2239;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+}
+
+.ensemble-button {
+    color: #ffffff;
+    background-color: #796194;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.ensemble-header {
+    color: #ffffff;
+    background-color: #796194;
+}
+
+.ensemble-header-text {
+    color: #ffffff;
+    background-color: #796194;
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px
+}
+
+.ensemble-header-text:hover, .ensemble-header-text:focus {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainscreen {
+    margin-top: 32px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
+.bottomrightFab {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* When the input is not focused */
+
+md-input-container label {
+    color: #776c80;
+}
+
+md-input-container.md-default-theme .md-input, md-input-container .md-input {
+    color: #776c80;
+}
+
+md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value label, md-input-container:not(.md-input-invalid).md-input-has-value label {
+    color: #776c80;
+}
+
+.marker {
+    background-image: url('marker.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.debug {
+    background-color: red;
+}
+
+.cardImage {
+    max-height: 100%;
+}
+
+.cardImageContrainer {
+    overflow: hidden;
+    height: 165.2px;
+    width: 50%;
+}
+
+.cardDetails {
+    width: 50%;
+    z-index: 50;
+}
+
+.cardTheme {
+    font-style: italic;
+    padding-top: 0px !important;
+    color: #959595;
+}
+
+.cardHead {
+    padding-top: 16px;
+}
+
+.cardImage {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 140%;
+    left: -40%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, .95), rgba(255, 255, 255, .85), rgba(255, 255, 255, .7), rgba(255, 255, 255, .5), rgba(255, 255, 255, .25), rgba(255, 255, 255, .1), rgba(255, 255, 255, .05), rgba(255, 255, 255, .025), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(./images/partyImages/default.jpg)
+}
+
+.detailsImage {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, .95), rgba(255, 255, 255, .85), rgba(255, 255, 255, .7), rgba(255, 255, 255, .5), rgba(255, 255, 255, .25), rgba(255, 255, 255, .1), rgba(255, 255, 255, .05), rgba(255, 255, 255, .025), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(./images/partyImages/default.jpg)
+}

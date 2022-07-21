@@ -1,0 +1,37 @@
+<md-card ng-repeat="party in $ctrl.parties track by $index" md-theme="{{ showDarkTheme ? 'dark-purple' : 'default' }}"
+    md-theme-watch>
+    <div layout="row">
+        <div class="cardDetails">
+            <md-card-title class="cardHead">
+                <md-card-title-text>
+                    <span class="md-headline">{{party.attributes.name}}</span>
+                    <span class="md-subhead cardTheme">a {{party.attributes.theme}} party</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions style="justify-content: left;" layout="row" layout-align="end center">
+
+                <a ui-sref="details({ id: party.id })">
+                    <md-button style="min-width: 36px;">
+                        Details
+                    </md-button>
+                </a>
+
+                <md-button style="min-width: 36px;" ng-click="$ctrl.doVote(party.id)" aria-label="Close">
+                    <div class="likebutton">
+                        <a>
+                            <i class="glyphicon"
+                                ng-class="($ctrl[party.id].userVotes==1) ? 'glyphicon-heart' : 'glyphicon-heart-empty'"></i>
+                        </a>
+                    </div>
+                </md-button>
+            </md-card-actions>
+        </div>
+        <div style="width: 50%;">
+            <div class="cardImage"
+                style="background-image: linear-gradient(to right, rgba(255, 255, 255, 1),rgba(255, 255, 255, .95),rgba(255, 255, 255, .85),rgba(255, 255, 255, .7),rgba(255, 255, 255, .5),rgba(255, 255, 255, .25),rgba(255, 255, 255, .1),rgba(255, 255, 255, .05),rgba(255, 255, 255, .025),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url({{party.attributes.image}})"
+                width="40%">
+
+            </div>
+        </div>
+    </div>
+</md-card>

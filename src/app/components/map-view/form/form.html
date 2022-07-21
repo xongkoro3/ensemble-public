@@ -1,0 +1,49 @@
+<md-dialog id="partyForm" aria-label="add a party form" flex="35" ng-cloak>
+    <form name="partyForm" ng-submit="form.addParty()">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add a Party</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="form.close()">
+                    <md-icon md-svg-src="./resources/images/close.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <div layout-gt-xs="row">
+                    <md-input-container class="md-block" flex-gt-sm="">
+                        <label>Theme</label>
+                        <input ng-model="form.party.theme">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-sm="">
+                        <label>Name</label>
+                        <input ng-model="form.party.name">
+                    </md-input-container>
+                </div>
+
+                <md-input-container class="md-block">
+                    <label>Image URL</label>
+                    <input ng-model="form.party.image">
+                </md-input-container>
+
+                <div layout-gt-sm="row">
+                    <md-input-container class="md-block">
+                        <label>lattitude</label>
+                        <input ng-model="form.party.coords.lat">
+                    </md-input-container>
+                    <md-input-container class="md-block">
+                        <label>longitude</label>
+                        <input ng-model="form.party.coords.lng">
+                    </md-input-container>
+                </div>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row" layout-align="center center">
+            <md-button type="submit" ng-disabled="loginForm.$invalid" class="md-raised md-primary">Submit</md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

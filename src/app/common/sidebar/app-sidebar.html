@@ -1,0 +1,29 @@
+<md-sidenav style="width: 55vw; height: 100vh; overflow:hidden; display: flex;"
+    class="md-sidenav-left md-whiteframe-4dp" md-component-id="left">
+
+    <md-toolbar style="position: sticky;" class="md-primary md-hue-2">
+        <div class="md-toolbar-tools">
+            <md-button ng-click="$ctrl.close()" class="md-icon-button" aria-label="Settings">
+                <md-icon md-svg-icon="./resources/images/menu.svg"></md-icon>
+            </md-button>
+            <h2 flex md-truncate>Parties</h2>
+        </div>
+    </md-toolbar>
+    <div style="overflow-y:scroll; height:inherit;">
+        <md-content layout-padding>
+            <div ui-view></div>
+            <form ng-submit="$ctrl.getParties()">
+                <md-input-container>
+                    <label for="testInput">Pick a theme </label>
+                    <input type="text" id="testInput" ng-model="$ctrl.theme">
+                </md-input-container>
+                <md-button class="md-raised md-primary" type="submit">
+                    Get All Parties
+                </md-button>
+            </form>
+            <md-button class="md-raised md-primary" onclick="location.href='http://localhost:8888/login'" type="button">
+                Authenticate Spotify</md-button>
+
+        </md-content>
+    </div>
+</md-sidenav>

@@ -1,0 +1,15 @@
+<div class="fixed">
+    <div id="mainScreen" class="fullscreen">
+        <div>
+            <div id="map" mapboxgl="" gl-style="'mapbox://styles/mapbox/dark-v9'" gl-controls="$ctrl.glControls"
+                gl-zoom="{ value: 9 }" gl-center="{ lat: 41.6764, lng: -86.2520}" gl-markers="$ctrl.glMarkers"
+                style="height: 100vh; width: 100vw;">
+            </div>
+        </div>
+
+        <md-button id="addParty" ng-click="$ctrl.showDialog($event)" class="md-fab bottomrightFab"
+            aria-label="Eat cake">
+            <md-icon style="pointer-events: none" md-svg-src="./resources/images/add.svg"></md-icon>
+        </md-button>
+    </div>
+</div>

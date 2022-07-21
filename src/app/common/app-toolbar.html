@@ -1,0 +1,22 @@
+<md-toolbar class="md-primary md-hue-1">
+	<div class="md-toolbar-tools">
+		<md-button ng-click="$ctrl.toggleLeft()" class="md-icon-button" aria-label="Settings">
+			<md-icon md-svg-icon="./resources/images/menu.svg"></md-icon>
+		</md-button>
+		<a flex md-truncate ng-href="#">
+			<h2>Ensemble</h2>
+		</a>
+
+		<!-- <md-button ng-hide="$ctrl.lin()" id="login" ng-click="$ctrl.showDialog($event)" md-colors="{background: 'default-accent-700'}" aria-label="Log In">Log In</md-button>
+		<md-button ng-hide="$ctrl.lin()" id="register" ng-click="$ctrl.showDialog($event)" md-colors="{background: 'default-primary-500'}" aria-label="Sign Up">Sign Up</md-button>
+		<div style="margin-right: 10px; font-family: 'Dancing Script', cursive;" ng-hide="$ctrl.lout()">Welcome, {{$ctrl.lin()}}</div>
+		<md-button ng-hide="$ctrl.lout()" id="logout" ng-click="$ctrl.logOut($event)" md-colors="{background: 'default-primary-500'}" aria-label="Log Out">Log Out</md-button> -->
+
+		<md-button ng-if="!$ctrl.username" id="login" ng-click="$ctrl.showDialog($event)" md-colors="{background: 'default-accent-700'}" aria-label="Log In">Log In</md-button>
+		<md-button ng-if="!$ctrl.username" id="register" ng-click="$ctrl.showDialog($event)" md-colors="{background: 'default-primary-500'}" aria-label="Sign Up">Sign Up</md-button>
+		<div ng-if="$ctrl.username" style="margin-right: 10px; font-family: 'Dancing Script', cursive;">Welcome, {{$ctrl.username}}
+		</div>
+		<md-button ng-if="$ctrl.username" id="logout" ng-click="$ctrl.logOut($event)" md-colors="{background: 'default-primary-500'}" aria-label="Log Out">Log Out</md-button>
+
+	</div>
+</md-toolbar>
